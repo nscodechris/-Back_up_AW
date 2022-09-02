@@ -1,0 +1,1 @@
+{'louise': 3, 'Computer': 1}{'klara': 3, 'Computer': 0}

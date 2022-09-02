@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p> {{date[0]}}-{{date[1]}}-{{date[2]}}:</p>
+    <ul>
+       {% for item in list %}
+          <li>{{item[0]}}: {{item[1]}} : {{item[2]}}</li>
+       {% endfor %}
+    </ul>
+
+    <form action="/delete">
+       <label for="name">Delete:</label><br>
+       <input type="text" id="name" name="name" value="Enter a name to delete">
+       <input type="submit" value="Delete">
+    </form>
+    <form action="/insert">
+       <label for="name">Insert:</label><br>
+       <input type="text" id="name" name="name" value="Enter a name"><br>
+       <input type="text" id="phone" name="phone" value="Enter a phone_no">
+       <input type="submit" value="Insert">
+    </form>
+    <form action="/update">
+      <label for="name">Update:</label><br>
+       <input type="text" id="name_id" name="name_id" value="What id to update?"><br>
+       <input type="text" id="name" name="name" value="New Name"><br>
+      <input type="text" id="phone" name="phone" value="New Phone"><br>
+       <input type="submit" value="update">
+
+  </form>
+  </body>
+</html>
+
